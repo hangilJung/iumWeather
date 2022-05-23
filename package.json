@@ -1,0 +1,24 @@
+{
+    "name": "weather",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "pm2 start app.js --name=WEATHER -f",
+        "dev": "nodemon bin/www.js"
+    },
+    "author": "sooin",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "cross-env": "^7.0.3",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "moment": "^2.29.1",
+        "mysql2": "^2.3.0",
+        "node-schedule": "^2.0.0",
+        "winston": "^3.3.3",
+        "winston-daily-rotate-file": "^4.5.5"
+    }
+}
